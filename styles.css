@@ -1,0 +1,184 @@
+:root {
+  /* Primary */
+  --gold-500: hsl(31, 77%, 52%);
+  --cyan-800: hsl(184, 100%, 22%);
+  --green-950: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --white-transparent: hsla(0, 0%, 100%, 0.75);
+  --gray-100: hsl(0, 0%, 95%);
+}
+body{
+  background-color: var(--gray-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Big Shoulders", Lexend Deca;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+.container{
+  width: 100%;
+  max-width:960px ;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+ border-radius: 8px;
+  background-color: var(--gray-100);
+
+}
+.leftsection{
+  width: 1000px;
+  height: auto;
+  background-color: var(--gold-500);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.middlesection{
+  width: 1000px;
+  background-color: var(--cyan-800);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.rightsection{
+  width: 1000px;
+  height: auto;
+  background-color: var(--green-950);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.learn{
+  background-color: var(--white-transparent);
+  width:100px;
+  height: 30px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+.learnright{
+  background-color: var(--white-transparent);
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--gold-500);
+  margin-left: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.learnright1{
+    background-color: var(--white-transparent);
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--cyan-800);
+  margin-left: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.learnright2{
+    background-color: var(--white-transparent);
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--green-950);
+  margin-left: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+h1{
+  color: var(--white-transparent);
+  margin-left: 30px;
+  font-weight: 700;
+}
+p{
+  margin-left: 30px;
+  width: 150px;
+  color: var(--white-transparent);
+  font-family: Lexend Deca;
+  font-weight: 400px;
+  font-size: 12px;
+}
+img{
+  margin-left: 30px;
+  margin-top: 50px;
+}
+@media(max-width: 600px){
+  body{
+    height: 100vh;
+    
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 300px;
+    margin-right: 30px;
+    border-radius: 20px;
+    width:300px;
+    height: auto;
+  }
+  .leftsection{
+    width: 90%;
+    max-width: 280px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 0;
+   border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0; /* Ensures it sits flush with the SUV card */
+  border-bottom-right-radius: 0;
+  }
+  .middlesection{
+    margin-top: 0;
+    margin-bottom: 0;
+     max-width: 280px;
+     width: 90%;
+
+  }
+  .rightsection{
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+     max-width: 280px;
+  }
+  p{
+    width: 200px;
+    word-spacing: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 2;
+  }
+  .learnright{
+    margin-top: 15px;
+  }
+  .learnright1{
+    margin-top: 15px;
+  }
+  .learnright2{
+    margin-top: 15px;
+  }
+}
